@@ -6,15 +6,15 @@ interface Props {
   completeTask(tasknameToDelete: string): void;
 }
 
-const TodoTask = ({task, completeTask}: Props) => {
+const TodoTask:React.FC<Props> = props => {
   return (
   <div className="task">
     <div className="content">
-      <span>{task.taskName}</span>
-      <span>{task.deadline}日</span>
+      <span>{props.task.title}</span>
+      <span>{props.task.deadline}日</span>
     </div>
     <button onClick={() => {
-      completeTask(task.taskName);
+      props.completeTask(props.task.title);
     }}>おわり</button>
   </div>
   );
