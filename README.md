@@ -1,5 +1,5 @@
 ## React-TypeScript-todo
-簡易TODOを作成してみました。メンテナンスを続けます。
+簡易TODOを作成してみました。
 
 
 ## 前提条件
